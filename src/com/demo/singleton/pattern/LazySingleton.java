@@ -1,16 +1,16 @@
 package com.demo.singleton.pattern;
 
-public class Singleton {
+public class LazySingleton {
 
-	private static Singleton instance; 
+	private static LazySingleton instance; 
 	
-	private Singleton() {
+	private LazySingleton() {
 		// Private constructor to prevent instantiation
 	}
 	
-	public static Singleton getInstance() {
+	public static LazySingleton getInstance() {
 		if(instance == null) {
-			instance = new Singleton();
+			instance = new LazySingleton();
 		}
 		return instance;
 	}	
